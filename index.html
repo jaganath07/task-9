@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form class="survey-form">
+        <label for="name"><b>Name</b> <span class="required">*</span></label>
+        <div class="name-field">
+            <input type="text" id="first-name" name="first-name" placeholder="First" required>
+            <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+        </div>
+
+        <label for="email"><b>Email</b> <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label><b>Your Experience</b> <span class="required">*</span></label>
+        <div class="experience-rating">
+            <span>Overall, how would you rate your experience with us?</span>
+            <div class="stars">
+                <input type="radio" id="star5" name="experience" value="5" required>
+                <label for="star5">&#9733;</label>
+                <input type="radio" id="star4" name="experience" value="4">
+                <label for="star4">&#9733;</label>
+                <input type="radio" id="star3" name="experience" value="3">
+                <label for="star3">&#9733;</label>
+                <input type="radio" id="star2" name="experience" value="2">
+                <label for="star2">&#9733;</label>
+                <input type="radio" id="star1" name="experience" value="1">
+                <label for="star1">&#9733;</label>
+            </div>
+        </div>
+
+        <label><b>How satisfied are you with</b> <span class="required">*</span></label>
+        <div class="satisfaction">
+            <div class="satisfaction-header">
+                <span></span>
+                <span class="aa">Very Unsatisfied</span>
+                <span class="bb">Unsatisfied</span>
+                <span class="cc">Neutral</span>
+                <span class="dd">Satisfied</span>
+                <span class="ee">Very Satisfied</span>
+            </div>
+            <div class="satisfaction-group bg-gray">
+                <span><b>Purchase</b></span>
+                <input type="radio" name="purchase" value="1" required>
+                <input type="radio" name="purchase" value="2">
+                <input type="radio" name="purchase" value="3">
+                <input type="radio" name="purchase" value="4">
+                <input type="radio" name="purchase" value="5">
+            </div>
+            <div class="satisfaction-group">
+                <span><b>Service</b></span>
+                <input type="radio" name="service" value="1" required>
+                <input type="radio" name="service" value="2">
+                <input type="radio" name="service" value="3">
+                <input type="radio" name="service" value="4">
+                <input type="radio" name="service" value="5">
+            </div>
+            <div class="satisfaction-group bg-gray">
+                <span><b>Company Overall</b></span>
+                <input type="radio" name="company" value="1" required>
+                <input type="radio" name="company" value="2">
+                <input type="radio" name="company" value="3">
+                <input type="radio" name="company" value="4">
+                <input type="radio" name="company" value="5">
+            </div>
+        </div>
+
+        <label><b>How likely are you to</b> <span class="required">*</span></label>
+        <div class="likelihood">
+            <div class="likelihood-header">
+                <span></span>
+                <span class="a">Very Unlikely</span>
+                <span class="b">Unlikely</span>
+                <span class="c">Neutral</span>
+                <span class="d">Likely</span>
+                <span class="e">Very Likely</span>
+            </div>
+            <div class="likelihood-group bg-gray">
+                <span><b>Buy from us again</b></span>
+                <input type="radio" name="buy-again" value="1" required>
+                <input type="radio" name="buy-again" value="2">
+                <input type="radio" name="buy-again" value="3">
+                <input type="radio" name="buy-again" value="4">
+                <input type="radio" name="buy-again" value="5">
+            </div>
+            <div class="likelihood-group">
+                <span><b>Recommend our product to others</b></span>
+                <input type="radio" name="recommend-product" value="1" required>
+                <input type="radio" name="recommend-product" value="2">
+                <input type="radio" name="recommend-product" value="3">
+                <input type="radio" name="recommend-product" value="4">
+                <input type="radio" name="recommend-product" value="5">
+            </div>
+            <div class="likelihood-group bg-gray">
+                <span><b>Recommend our company to others</b></span>
+                <input type="radio" name="recommend-company" value="1" required>
+                <input type="radio" name="recommend-company" value="2">
+                <input type="radio" name="recommend-company" value="3">
+                <input type="radio" name="recommend-company" value="4">
+                <input type="radio" name="recommend-company" value="5">
+            </div>
+        </div>
+
+        <label for="comments"><b>Additional comments or suggestions</b></label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

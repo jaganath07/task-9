@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.survey-form {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+.required {
+    color: red;
+}
+
+.name-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-field input {
+    width: 48%;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.experience-rating {
+    margin: 20px 0;
+}
+
+.stars {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    font-size: 2em;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.stars input:checked~label,
+.stars label:hover,
+.stars label:hover~label {
+    color: #f39c12;
+}
+
+.stars label:hover~label,
+.stars input:checked~label~label {
+    color: #ccc;
+}
+
+.satisfaction,
+.likelihood {
+    margin: 20px 0;
+}
+
+.satisfaction-header,
+.likelihood-header {
+    display: flex;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.aa{
+    margin-left: 570px;
+}
+.bb{
+    margin-left: 80px;
+}
+.cc{
+    margin-left: 124px;
+}
+.dd{
+    margin-left: 150px;
+}
+.ee{
+    margin-left: 99px;
+}
+.satisfaction-group,
+.likelihood-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.bg-gray {
+    background-color: #f0f0f0;
+}
+
+.satisfaction-group span,
+.likelihood-group span {
+    width: 30%;
+    color: #333;
+    font-weight: bold;
+}
+.a {
+    margin-left: 570px;
+}
+
+.b {
+    margin-left: 80px;
+}
+
+.c {
+    margin-left: 124px;
+}
+
+.d{
+    margin-left: 150px;
+}
+
+.e {
+    margin-left: 99px;
+}
+
+.satisfaction-group input[type="radio"],
+.likelihood-group input[type="radio"] {
+    margin-right: 10px;
+    width: auto;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .name-field {
+        flex-direction: column;
+    }
+
+    .name-field input {
+        width: 100%;
+    }
+
+    .satisfaction-header,
+    .likelihood-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .satisfaction-header span,
+    .likelihood-header span {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .satisfaction-group,
+    .likelihood-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .satisfaction-group span,
+    .likelihood-group span {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .satisfaction-group input[type="radio"],
+    .likelihood-group input[type="radio"] {
+        width: 100%;
+    }
+}
